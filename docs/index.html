@@ -96,7 +96,6 @@ footer a:hover{color:var(--accent)}
     <h2>Preview</h2>
     <div class="tabs">
       <div class="tab active" onclick="switchTab(event,'rust')">Rust</div>
-      <div class="tab" onclick="switchTab(event,'nix')">Nix</div>
       <div class="tab" onclick="switchTab(event,'toml')">TOML</div>
     </div>
 
@@ -134,30 +133,6 @@ fn main() {
     if let Some(accent) = koppi.get("accent") {
         println!("accent → {accent}");
     }
-}</code></pre></div>
-
-    <div class="code-panel" id="panel-nix"><pre class="hljs"><code class="language-nix">{ pkgs, inputs, ... }:
-
-let
-  koppi = inputs.koppi-theme.lib.colors;
-in {
-  programs.helix = {
-    enable        = true;
-    settings.theme = "koppi";
-  };
-
-  home.sessionVariables = {
-    FZF_DEFAULT_OPTS = ''
-      --color=fg:${koppi.fg},bg:${koppi.bg}
-      --color=hl:${koppi.accent},hl+:${koppi.accbrt}
-      --color=prompt:${koppi.accent},pointer:${koppi.accbrt}
-    '';
-  };
-
-  programs.bat = {
-    enable       = true;
-    config.theme = "Koppi";
-  };
 }</code></pre></div>
 
     <div class="code-panel" id="panel-toml"><pre class="hljs"><code class="language-toml"># Koppi for Helix — ports/helix/koppi.toml
