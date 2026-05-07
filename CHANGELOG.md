@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.7.0
+
+Added:
+
+- `palette/koppi.css` — full Koppi palette as CSS custom properties for use in any
+  web or CSS-based theming context without a Nix dependency.
+- `palette/koppi.scss` — full Koppi palette as SCSS variables for use in SCSS projects.
+- Portable usage section in README documenting CSS and SCSS consumption.
+- `palette/koppi.css` and `palette/koppi.scss` added to repository validation in
+  `scripts/check.sh`.
+
+Token names follow the canonical palette with camelCase converted to kebab-case
+(`bgLine` → `--koppi-bg-line`, `fgMuted` → `--koppi-fg-muted`).
+
 ## 0.6.0
 
 Changed:
