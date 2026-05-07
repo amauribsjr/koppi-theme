@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Koppi Theme</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<style>
+:root{
+  --bg:#2e2e2e;--bg1:#383838;--bg2:#434343;--bg3:#535353;--bg4:#646464;
+  --bgLine:#353535;--bgSelect:#4e4e4e;
+  --fg:#e8e8e8;--fg2:#787878;--fgMuted:#909090;--fgSubtle:#707070;--fgHint:#606060;
+  --accent:#d4b048;--accdim:#8a7020;--accbrt:#e8c858;--acchigh:#f0d060;
+  --red:#b54a4a;--bred:#c45a5a;--green:#5a8f6a;--bgreen:#6aa07a;--warning:#c4924a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:'JetBrains Mono','Fira Code','Cascadia Code',monospace;line-height:1.6;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accbrt)}
+
+header{border-bottom:1px solid var(--bg3);padding:2rem 2rem 1.5rem}
+.header-inner{max-width:860px;margin:0 auto;display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.logo{font-size:1.6rem;font-weight:700;color:var(--accent);letter-spacing:0.04em}
+.tagline{font-size:0.85rem;color:var(--fgMuted);margin-top:0.25rem}
+.gh-link{font-size:0.8rem;color:var(--fgMuted);border:1px solid var(--bg3);padding:0.3rem 0.75rem;border-radius:4px;transition:border-color 0.15s,color 0.15s}
+.gh-link:hover{border-color:var(--accent);color:var(--accent)}
+
+main{max-width:860px;margin:0 auto;padding:2.5rem 2rem}
+section{margin-bottom:3rem}
+h2{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--fgMuted);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--bg2)}
+
+.palette-group{margin-bottom:1.75rem}
+.palette-group-label{font-size:0.7rem;color:var(--fgHint);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.6rem}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:6px}
+.swatch{border-radius:4px;overflow:hidden;border:1px solid rgba(255,255,255,0.06)}
+.swatch-color{height:36px}
+.swatch-info{background:var(--bg1);padding:5px 7px}
+.swatch-name{font-size:0.65rem;color:var(--fgSubtle);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.swatch-hex{font-size:0.7rem;color:var(--fgMuted);display:block}
+
+.tabs{display:flex;gap:2px;margin-bottom:0}
+.tab{background:var(--bg1);border:1px solid var(--bg2);border-bottom:none;padding:0.4rem 1rem;font-size:0.75rem;color:var(--fgMuted);cursor:pointer;border-radius:4px 4px 0 0;transition:color 0.15s,background 0.15s}
+.tab.active{background:var(--bg2);color:var(--accent);border-color:var(--bg3)}
+.tab:hover:not(.active){color:var(--fg)}
+.code-panel{display:none;border:1px solid var(--bg3);border-radius:0 4px 4px 4px;overflow:hidden}
+.code-panel.active{display:block}
+pre.hljs{margin:0;padding:1.25rem 1.5rem;font-size:0.8rem;line-height:1.7;overflow-x:auto;background:var(--bg1)!important}
+
+.hljs{background:var(--bg1)!important;color:var(--fg)!important}
+.hljs-comment,.hljs-quote{color:var(--fg2)!important;font-style:italic}
+.hljs-string,.hljs-doctag{color:var(--bgreen)!important}
+.hljs-number,.hljs-literal{color:var(--accbrt)!important}
+.hljs-keyword,.hljs-selector-tag,.hljs-built_in,.hljs-name,.hljs-tag{color:var(--accent)!important}
+.hljs-attribute,.hljs-attr,.hljs-property{color:var(--accbrt)!important}
+.hljs-type,.hljs-class .hljs-title,.hljs-title.class_{color:var(--fgMuted)!important}
+.hljs-title,.hljs-title.function_{color:var(--fg)!important}
+.hljs-variable,.hljs-template-variable{color:var(--fg)!important}
+.hljs-operator,.hljs-punctuation{color:var(--fgSubtle)!important}
+.hljs-params{color:var(--fg)!important}
+.hljs-addition{color:var(--bgreen)!important}
+.hljs-deletion{color:var(--bred)!important}
+.hljs-meta{color:var(--warning)!important}
+.hljs-section{color:var(--accent)!important;font-weight:bold}
+.hljs-symbol{color:var(--acchigh)!important}
+.hljs-regexp,.hljs-link{color:var(--green)!important}
+
+footer{border-top:1px solid var(--bg2);padding:1.25rem 2rem;text-align:center;font-size:0.75rem;color:var(--fgHint)}
+footer a{color:var(--fgMuted)}
+footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <div class="logo">Koppi</div>
+      <div class="tagline">A warm, low-contrast, dark theme for editors, terminals and Wayland desktop components.</div>
+    </div>
+    <a class="gh-link" href="https://github.com/amauribsjr/koppi-theme">GitHub →</a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Palette</h2>
+    <div class="palette-group"><div class="palette-group-label">Background</div><div class="swatches" id="sw-bg"></div></div>
+    <div class="palette-group"><div class="palette-group-label">Foreground</div><div class="swatches" id="sw-fg"></div></div>
+    <div class="palette-group"><div class="palette-group-label">Accent</div><div class="swatches" id="sw-accent"></div></div>
+    <div class="palette-group"><div class="palette-group-label">Semantic</div><div class="swatches" id="sw-semantic"></div></div>
+    <div class="palette-group"><div class="palette-group-label">Terminal</div><div class="swatches" id="sw-terminal"></div></div>
+  </section>
+
+  <section>
+    <h2>Preview</h2>
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab(event,'rust')">Rust</div>
+      <div class="tab" onclick="switchTab(event,'nix')">Nix</div>
+      <div class="tab" onclick="switchTab(event,'toml')">TOML</div>
+    </div>
+
+    <div class="code-panel active" id="panel-rust"><pre class="hljs"><code class="language-rust">use std::collections::HashMap;
+
+/// A named color theme with typed token access.
+#[derive(Debug, Clone)]
+pub struct Theme {
+    name:   String,
+    colors: HashMap<String, String>,
+}
+
+impl Theme {
+    pub fn new(name: &str) -> Self {
+        Self { name: name.to_string(), colors: HashMap::new() }
+    }
+
+    pub fn set(&mut self, token: &str, hex: &str) -> &mut Self {
+        self.colors.insert(token.to_string(), hex.to_string());
+        self
+    }
+
+    pub fn get(&self, token: &str) -> Option<&str> {
+        self.colors.get(token).map(|s| s.as_str())
+    }
+}
+
+fn main() {
+    let mut koppi = Theme::new("Koppi");
+    koppi
+        .set("bg",     "#2e2e2e")
+        .set("accent", "#d4b048")
+        .set("green",  "#5a8f6a");
+
+    if let Some(accent) = koppi.get("accent") {
+        println!("accent → {accent}");
+    }
+}</code></pre></div>
+
+    <div class="code-panel" id="panel-nix"><pre class="hljs"><code class="language-nix">{ pkgs, inputs, ... }:
+
+let
+  koppi = inputs.koppi-theme.lib.colors;
+in {
+  programs.helix = {
+    enable        = true;
+    settings.theme = "koppi";
+  };
+
+  home.sessionVariables = {
+    FZF_DEFAULT_OPTS = ''
+      --color=fg:${koppi.fg},bg:${koppi.bg}
+      --color=hl:${koppi.accent},hl+:${koppi.accbrt}
+      --color=prompt:${koppi.accent},pointer:${koppi.accbrt}
+    '';
+  };
+
+  programs.bat = {
+    enable       = true;
+    config.theme = "Koppi";
+  };
+}</code></pre></div>
+
+    <div class="code-panel" id="panel-toml"><pre class="hljs"><code class="language-toml"># Koppi for Helix — ports/helix/koppi.toml
+
+"ui.background"          = { bg = "#2e2e2e" }
+"ui.statusline"          = { fg = "#e8e8e8", bg = "#383838" }
+"ui.statusline.insert"   = { fg = "#2e2e2e", bg = "#d4b048", modifiers = ["bold"] }
+"ui.statusline.select"   = { fg = "#2e2e2e", bg = "#e8c858", modifiers = ["bold"] }
+"ui.cursor.insert"       = { fg = "#2e2e2e", bg = "#d4b048" }
+"ui.selection"           = { bg = "#434343" }
+"ui.linenr"              = { fg = "#4e4e4e" }
+"ui.linenr.selected"     = { fg = "#787878", modifiers = ["bold"] }
+
+"keyword"                = { fg = "#d4b048" }
+"string"                 = { fg = "#6aa07a" }
+"comment"                = { fg = "#787878", modifiers = ["italic"] }
+"constant.numeric"       = { fg = "#e8c858" }
+"type"                   = { fg = "#909090" }
+
+"diagnostic.error"       = { underline = { color = "#c45a5a", style = "curl" } }
+"diagnostic.warning"     = { underline = { color = "#c4924a", style = "curl" } }</code></pre></div>
+  </section>
+</main>
+
+<footer>
+  <p>Koppi — MIT license &nbsp;·&nbsp; <a href="https://github.com/amauribsjr/koppi-theme">github.com/amauribsjr/koppi-theme</a></p>
+</footer>
+
+<script>
+const palette = {
+  bg:[
+    {name:'bg',hex:'#2e2e2e'},{name:'bg1',hex:'#383838'},{name:'bg2',hex:'#434343'},
+    {name:'bg3',hex:'#535353'},{name:'bg4',hex:'#646464'},{name:'bgLine',hex:'#353535'},
+    {name:'bgIndent',hex:'#3a3a3a'},{name:'bgDim',hex:'#404040'},{name:'bgSelect',hex:'#4e4e4e'},
+  ],
+  fg:[
+    {name:'fg',hex:'#e8e8e8'},{name:'fg1',hex:'#e8e8e8'},{name:'fg2',hex:'#787878'},
+    {name:'fgMuted',hex:'#909090'},{name:'fgSubtle',hex:'#707070'},{name:'fgHint',hex:'#606060'},
+  ],
+  accent:[
+    {name:'accent',hex:'#d4b048'},{name:'accdim',hex:'#8a7020'},
+    {name:'accbrt',hex:'#e8c858'},{name:'acchigh',hex:'#f0d060'},
+  ],
+  semantic:[
+    {name:'red',hex:'#b54a4a'},{name:'bred',hex:'#c45a5a'},
+    {name:'green',hex:'#5a8f6a'},{name:'bgreen',hex:'#6aa07a'},{name:'warning',hex:'#c4924a'},
+  ],
+  terminal:[
+    {name:'black',hex:'#2e2e2e'},{name:'red',hex:'#b54a4a'},{name:'green',hex:'#5a8f6a'},
+    {name:'yellow',hex:'#d4b048'},{name:'blue',hex:'#646464'},{name:'magenta',hex:'#535353'},
+    {name:'cyan',hex:'#909090'},{name:'white',hex:'#e8e8e8'},{name:'bblack',hex:'#535353'},
+    {name:'bred',hex:'#c45a5a'},{name:'bgreen',hex:'#6aa07a'},{name:'byellow',hex:'#e8c858'},
+    {name:'bblue',hex:'#909090'},{name:'bmagenta',hex:'#787878'},{name:'bcyan',hex:'#a8a8a8'},
+    {name:'bwhite',hex:'#f5f5f5'},
+  ]
+};
+
+function luminance(hex){
+  const r=parseInt(hex.slice(1,3),16)/255;
+  const g=parseInt(hex.slice(3,5),16)/255;
+  const b=parseInt(hex.slice(5,7),16)/255;
+  return 0.2126*r+0.7152*g+0.0722*b;
+}
+
+function renderSwatches(id,items){
+  document.getElementById('sw-'+id).innerHTML=items.map(({name,hex})=>`
+    <div class="swatch">
+      <div class="swatch-color" style="background:${hex}"></div>
+      <div class="swatch-info">
+        <span class="swatch-name">${name}</span>
+        <span class="swatch-hex">${hex}</span>
+      </div>
+    </div>`).join('');
+}
+
+Object.entries(palette).forEach(([k,v])=>renderSwatches(k,v));
+
+function switchTab(e,lang){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.code-panel').forEach(p=>p.classList.remove('active'));
+  e.target.classList.add('active');
+  document.getElementById('panel-'+lang).classList.add('active');
+  hljs.highlightAll();
+}
+
+hljs.highlightAll();
+</script>
+</body>
+</html>
