@@ -17,6 +17,8 @@ log_step() {
 required_files=(
   "palette/koppi.json"
   "palette/koppi.nix"
+  "palette/koppi.css"
+  "palette/koppi.scss"
 
   "ports/alacritty/koppi.toml"
   "ports/foot/koppi.ini"

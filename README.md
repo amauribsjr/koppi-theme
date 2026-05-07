@@ -8,7 +8,7 @@ Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gu
 
 ## Summary
 
-[Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix usage](#nix-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
+[Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix usage](#nix-usage) · [Portable usage](#portable-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
 
 ## Preview
 
@@ -45,6 +45,8 @@ The canonical palette is available in:
 
 * `palette/koppi.json`
 * `palette/koppi.nix`
+* `palette/koppi.css`
+* `palette/koppi.scss`
 
 ## Ports
 
@@ -205,6 +207,51 @@ Then:
 colors = inputs.koppi-theme.lib.colors;
 ```
 
+## Portable usage
+ 
+For projects that do not use Nix, the palette is also available as CSS custom properties
+and SCSS variables under `palette/`.
+ 
+**CSS:**
+ 
+```css
+@import "palette/koppi.css";
+ 
+.my-element {
+  background-color: var(--koppi-bg);
+  color: var(--koppi-fg);
+  border-color: var(--koppi-accent);
+}
+```
+ 
+**SCSS:**
+ 
+```scss
+@use "palette/koppi" as koppi;
+ 
+.my-element {
+  background-color: koppi.$koppi-bg;
+  color: koppi.$koppi-fg;
+  border-color: koppi.$koppi-accent;
+}
+```
+
+Token names follow the same convention as the JSON palette, with camelCase converted
+to kebab-case: `bgLine` → `--koppi-bg-line`, `fgMuted` → `--koppi-fg-muted`.
+
+**JSON:**
+
+```json
+{
+  "bg": "#2e2e2e",
+  "accent": "#d4b048"
+}
+```
+
+The full palette is available at `palette/koppi.json` and can be consumed directly
+by any tooling that reads JSON — build scripts, design tokens pipelines, or theme
+generators.
+
 ## Philosophy
 
 Koppi is:
@@ -226,7 +273,6 @@ Koppi is what I want to feel when I'm working in a WM environment.
 * [x] Add Neovim port.
 * [x] Add VS Code port.
 * [ ] Add Home Manager modules.
-* [ ] Consider GTK/libadwaita support later.
 
 ## License
 
