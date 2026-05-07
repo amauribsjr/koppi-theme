@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0
+
+Added:
+
+- Neovim colorscheme port.
+- VS Code theme port.
+
+Changed:
+
+- Updated README with editor port installation instructions.
+- Extended repository validation for the new editor ports.
+
+
 ## 0.2.0
 
 Added:

@@ -44,19 +44,21 @@ The canonical palette is available in:
 
 ## Ports
 
-| App       | Status    | File                         |
-| --------- | --------- | ---------------------------- |
-| Helix     | Available | `ports/helix/koppi.toml`     |
-| Zed       | Available | `ports/zed/koppi.json`       |
-| Kitty     | Available | `ports/kitty/koppi.conf`     |
-| Alacritty | Available | `ports/alacritty/koppi.toml` |
-| Foot      | Available | `ports/foot/koppi.ini`       |
-| WezTerm   | Available | `ports/wezterm/koppi.lua`    |
-| Ghostty   | Available | `ports/ghostty/koppi`        |
-| Waybar    | Available | `ports/waybar/koppi.css`     |
-| Wofi      | Available | `ports/wofi/koppi.css`       |
-| gtklock   | Available | `ports/gtklock/koppi.css`    |
-| ReGreet   | Initial   | `ports/regreet/koppi.css`    |
+| App       | Status    | File                                         |
+| --------- | --------- | -------------------------------------------- |
+| Helix     | Available | `ports/helix/koppi.toml`                     |
+| Zed       | Available | `ports/zed/koppi.json`                       |
+| Neovim    | Available | `ports/neovim/colors/koppi.lua`              |
+| VS Code   | Available | `ports/vscode/themes/koppi-color-theme.json` |
+| Kitty     | Available | `ports/kitty/koppi.conf`                     |
+| Alacritty | Available | `ports/alacritty/koppi.toml`                 |
+| Foot      | Available | `ports/foot/koppi.ini`                       |
+| WezTerm   | Available | `ports/wezterm/koppi.lua`                    |
+| Ghostty   | Available | `ports/ghostty/koppi`                        |
+| Waybar    | Available | `ports/waybar/koppi.css`                     |
+| Wofi      | Available | `ports/wofi/koppi.css`                       |
+| gtklock   | Available | `ports/gtklock/koppi.css`                    |
+| ReGreet   | Initial   | `ports/regreet/koppi.css`                    |
 
 ## Installation
 
@@ -81,6 +83,36 @@ cp ports/zed/koppi.json ~/.config/zed/themes/koppi.json
 ```
 
 Then select `Koppi` from Zed's theme selector.
+
+### Neovim
+
+```bash
+mkdir -p ~/.config/nvim/colors
+cp ports/neovim/colors/koppi.lua ~/.config/nvim/colors/koppi.lua
+```
+
+Then set:
+
+```vim
+colorscheme koppi
+```
+
+Or in Lua:
+
+```lua
+vim.cmd.colorscheme("koppi")
+```
+
+### VS Code
+
+Copy the VS Code port as a local extension:
+
+```bash
+mkdir -p ~/.vscode/extensions/koppi-theme
+cp -r ports/vscode/* ~/.vscode/extensions/koppi-theme/
+```
+
+Then reload VS Code and select `Koppi` from the theme selector.
 
 ### Kitty
 

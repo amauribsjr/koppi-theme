@@ -1,0 +1,22 @@
+{
+  "name": "koppi-theme",
+  "displayName": "Koppi Theme",
+  "description": "A warm, low-contrast, dark theme.",
+  "version": "0.3.0",
+  "publisher": "amauribsjr",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Koppi",
+        "uiTheme": "vs-dark",
+        "path": "./themes/koppi-color-theme.json"
+      }
+    ]
+  }
+}
