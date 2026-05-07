@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.4.0
+
+Added:
+
+- Palette documentation.
+- Porting guidelines.
+- Release policy documentation.
+- Contribution guidelines.
+- Bug report issue template.
+- Port request issue template.
+- Pull request template.
+
+Changed:
+
+- Improved project documentation for public usage and contribution readiness.
+
 ## 0.3.1
 
 Fixed:

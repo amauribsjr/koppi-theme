@@ -1,52 +1,5 @@
 # Porting Koppi
 
-| UI role              | Koppi color |
-|----------------------|-------------|
-| Main background      | `bg`        |
-| Secondary background | `bg1`       |
-| Hover background     | `bg2`       |
-| Border               | `bg3`       |
-| Disabled UI          | `bg4`       |
-| Main text            | `fg`        |
-| Muted text           | `fgMuted`   |
-| Subtle text          | `fgSubtle`  |
-| Punctuation          | `fgSubtle`  |
-| Selection            | `bgSelect`  |
-| Primary accent       | `accent`    |
-| Bright accent        | `accbrt`    |
-| Error                | `bred`      |
-| Warning              | `warning`   |
-| Success              | `bgreen`    |
-
-## Terminal mapping
-
-| ANSI role      | Koppi color |
-|----------------|-------------|
-| black          | `black`     |
-| red            | `red`       |
-| green          | `green`     |
-| yellow         | `yellow`    |
-| blue           | `blue`      |
-| magenta        | `magenta`   |
-| cyan           | `cyan`      |
-| white          | `white`     |
-| bright black   | `bblack`    |
-| bright red     | `bred`      |
-| bright green   | `bgreen`    |
-| bright yellow  | `byellow`   |
-| bright blue    | `bblue`     |
-| bright magenta | `bmagenta`  |
-| bright cyan    | `bcyan`     |
-| bright white   | `bwhite`    |
-
-## CSS font guidance
-
-Prefer this:
-
-```css
-font-family: "JetBrainsMono Nerd Font", monospace;
-```
-
 Avoid this in public ports:
 
 ```css
@@ -65,3 +18,35 @@ Prefer this:
 /* Optional: set your own wallpaper path. */
 /* background-image: url("/path/to/wallpaper.png"); */
 ```
+
+## What a port should include
+
+A port should include theme-related values only when possible.
+
+Good examples:
+
+- editor color theme files;
+- terminal color palettes;
+- CSS theme files for bars, launchers, lock screens and greeters;
+- syntax highlighting definitions;
+- color variables.
+
+Avoid including personal behavior by default:
+
+- keybinds;
+- shell commands;
+- machine-specific paths;
+- user names;
+- full app configs when a theme-only file is possible.
+
+## New port checklist
+
+Before submitting or releasing a new port:
+
+- [ ] The port uses Koppi palette colors.
+- [ ] The port avoids personal paths.
+- [ ] The port avoids unnecessary full-app configuration.
+- [ ] The port has a clear installation note in `README.md`.
+- [ ] The port is added to `scripts/check.sh`.
+- [ ] A screenshot is added when practical.
+- [ ] `CHANGELOG.md` mentions the new port.
