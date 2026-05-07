@@ -1,0 +1,37 @@
+@define-color accent_color #d4b048;
+@define-color accent_bg_color #d4b048;
+@define-color accent_fg_color #2e2e2e;
+
+@define-color window_bg_color #2e2e2e;
+@define-color window_fg_color #e8e8e8;
+
+@define-color view_bg_color #2e2e2e;
+@define-color view_fg_color #e8e8e8;
+
+@define-color card_bg_color #383838;
+@define-color card_fg_color #e8e8e8;
+
+* {
+  text-shadow: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: #2e2e2e;
+  color: #e8e8e8;
+}
+
+box#login-box {
+  background-color: #383838;
+  border: 2px solid #d4b048;
+  border-radius: 4px;
+  padding: 36px 48px;
+  min-width: 420px;
+}
+
+button.suggested-action {
+  background-color: #d4b048;
+  color: #2e2e2e;
+  border: 1px solid #d4b048;
+  font-weight: 800;
+}

@@ -1,0 +1,84 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  text-shadow: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: #2e2e2e;
+  background-image: url("/home/koppi/Pictures/Wallpapers/wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #e8e8e8;
+}
+
+#window-box {
+  background-color: #383838;
+  border: 2px solid #d4b048;
+  border-radius: 4px;
+  padding: 36px 48px;
+  min-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
+}
+
+#clock-label {
+  color: #e8c858;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#date-label {
+  color: #787878;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+#input-label {
+  color: #6aa07a;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#input-field {
+  background-color: #2e2e2e;
+  color: #e8e8e8;
+  border: 1px solid #535353;
+  border-radius: 4px;
+  padding: 10px 14px;
+  caret-color: #d4b048;
+  box-shadow: none;
+  outline: none;
+}
+
+#input-field:focus {
+  border-color: #d4b048;
+  box-shadow: 0 0 0 1px #d4b048;
+  outline: none;
+}
+
+#unlock-button {
+  background-color: #d4b048;
+  color: #2e2e2e;
+  border: 1px solid #d4b048;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-weight: 800;
+  box-shadow: none;
+  text-shadow: none;
+  outline: none;
+}
+
+#unlock-button:hover {
+  background-color: #e8c858;
+  border-color: #e8c858;
+  color: #2e2e2e;
+}
+
+#error-label {
+  color: #c45a5a;
+  font-weight: 600;
+  margin-top: 8px;
+}
