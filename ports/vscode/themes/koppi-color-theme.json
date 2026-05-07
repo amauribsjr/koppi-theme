@@ -53,6 +53,6 @@
     "statusBar.debuggingForeground": "#e8e8e8",
     "statusBarItem.hoverBackground": "#434343",
     "statusBarItem.remoteBackground": "#d4b048",
-    "statusBarItem.remoteForeground": "#2e2e2e",
-
+    "statusBarItem.remoteForeground": "#2e2e2e"
+  }
 }
