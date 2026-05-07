@@ -110,6 +110,7 @@
         "success.border":     "#6aa07a",
 
         "hint":               "#787878",
+        "hint.background":    "#383838",
         "predictive":         "#646464",
 
         "modified":  "#d4b048",
