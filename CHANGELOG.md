@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.5.3
+
+Fixed:
+
+- Added missing CHANGELOG entry for 0.5.2.
+
+## 0.5.2
+
+Fixed:
+
+- Marked Neovim and VS Code roadmap items as completed in README.
+- Corrected flake input URL in README (amauri → amauribsjr).
+- Removed duplicate Waybar, Wofi and gtklock installation sections from README.
+- Restored missing Background section header, table header, and bg/bg1 rows in docs/palette.md.
+- Added design note explaining intentional neutral mapping of terminal blue/magenta/cyan in docs/palette.md.
+- Fixed font guidance in docs/porting.md: restored missing alternative example and corrected reference from "first form" to "second form".
+
 ## 0.5.1
 
 Fixed:
