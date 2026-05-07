@@ -21,6 +21,8 @@ Screenshots are in `screenshots/`.
 
 ![Koppi Helix preview](screenshots/helix.png)
 
+- Live preview: [amauribsjr.github.io/koppi-theme](https://amauribsjr.github.io/koppi-theme)
+
 ## Palette
 
 | Name       | Hex       |
