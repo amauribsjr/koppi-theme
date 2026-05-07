@@ -4,7 +4,7 @@
 
 It started as the visual layer of my personal NixOS setup and is being split into a standalone, reproducible theme project.
 
-2 keys of inspiration: my friend Bayer and Rust.
+Two key influences shaped Koppi: Bayer and Rust.
 
 ## Preview
 
@@ -79,7 +79,6 @@ cp ports/zed/koppi.json ~/.config/zed/themes/koppi.json
 Then select `Koppi` from Zed's theme selector.
 
 ### Kitty
-*(when ported, I thank your patience)*
 
 ```bash
 mkdir -p ~/.config/kitty
@@ -100,7 +99,6 @@ cp ports/waybar/koppi.css ~/.config/waybar/style.css
 ```
 
 ### Wofi
-*(when ported, I thank your patience)*
 
 ```bash
 mkdir -p ~/.config/wofi
@@ -143,7 +141,7 @@ Koppi is what I want to feel when I'm working in a WM environment.
 
 ## Roadmap
 
-* [ ] Add screenshots.
+* [x] Add screenshots.
 * [ ] Stabilize palette names.
 * [ ] Add more terminal ports.
 * [ ] Add Neovim port.
