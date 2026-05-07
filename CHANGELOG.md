@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.0
+
+Changed:
+
+- Removed alias tokens with no distinct color value: `orange`, `teal`, `redsoft`, `slate`.
+  These tokens were identical in hex to existing canonical tokens (`accent`, `fgMuted`,
+  `accdim`, `bg1`) and added noise without semantic value.
+- Formalized the terminal color design decision: `blue`, `magenta`, `cyan` and their bright
+  variants are intentionally mapped to neutral grays. This is documented in `docs/palette.md`
+  and is a stable design choice, not an oversight.
+
 ## 0.5.3
 
 Fixed:

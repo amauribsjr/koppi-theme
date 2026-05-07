@@ -4,18 +4,19 @@ Koppi follows semantic versioning while it is in the `0.x` series, with a pragma
 
 ## Version meaning before 1.0.0
 
-| Version range | Meaning                                      |
-|---------------|----------------------------------------------|
-| `0.1.x`       | Initial public bootstrap                     |
-| `0.2.x`       | Terminal port expansion                      |
-| `0.3.x`       | Editor port expansion                        |
-| `0.4.x`       | Documentation and contribution readiness     |
-| `0.5.x`       | Validation and consistency checks            |
-| `0.6.x`       | CLI/TUI ports                                |
-| `0.7.x`       | Portable palette exports                     |
-| `0.8.x`       | Visual previews and screenshots             |
-| `0.9.x`       | Nix package and Home Manager integration     |
-| `1.0.0`       | Stable palette and stable public structure   |
+| Version range | Meaning                                                    |
+|---------------|------------------------------------------------------------|
+| `0.1.x`       | Initial public bootstrap                                   |
+| `0.2.x`       | Terminal port expansion                                    |
+| `0.3.x`       | Editor port expansion                                      |
+| `0.4.x`       | Documentation and contribution readiness                   |
+| `0.5.x`       | Validation, consistency checks and documentation fixes     |
+| `0.6.x`       | Palette foundation hardening                               |
+| `0.7.x`       | Portable palette exports (CSS vars, SCSS)                  |
+| `0.8.x`       | CLI/TUI port expansion (bat, delta, fzf, btop, lazygit)    |
+| `0.9.x`       | Additional port coverage and screenshot standards          |
+| `0.10.x`      | Nix package and Home Manager modules                       |
+| `1.0.0`       | Stable palette, stable public structure, frozen API        |
 
 ## When to create a release
 

@@ -43,9 +43,6 @@
 | `green`   | `#5a8f6a` | Success, additions          |
 | `bgreen`  | `#6aa07a` | Bright success              |
 | `warning` | `#c4924a` | Warnings, conflicts         |
-| `orange`  | `#d4b048` | Accent-like orange          |
-| `teal`    | `#909090` | Muted cyan/teal role        |
-| `slate`   | `#383838` | Dark neutral surface        |
 
 ## Terminal colors
 
