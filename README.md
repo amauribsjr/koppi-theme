@@ -6,6 +6,10 @@ It started as the visual layer of my personal NixOS setup and is being split int
 
 Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gustabayer) and Rust.
 
+## Summary
+
+[Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix usage](#nix-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
+
 ## Preview
 
 Screenshots are in `screenshots/`.
@@ -247,4 +251,4 @@ Koppi is what I want to feel when I'm working in a WM environment.
 
 ## License
 
-MIT.
+[MIT](https://opensource.org/license/mit)
