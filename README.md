@@ -191,20 +191,6 @@ mkdir -p ~/.config/gtklock
 cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
 ```
 
-### Waybar
-
-```bash
-mkdir -p ~/.config/waybar
-cp ports/waybar/koppi.css ~/.config/waybar/style.css
-```
-
-### Wofi
-
-```bash
-mkdir -p ~/.config/wofi
-cp ports/wofi/koppi.css ~/.config/wofi/style.css
-```
-
 ### gtklock
 
 ```bash
@@ -217,7 +203,7 @@ cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
 This repository exposes the Koppi palette as a flake output:
 
 ```nix
-inputs.koppi-theme.url = "github:amauri/koppi-theme";
+inputs.koppi-theme.url = "github:amauribsjr/koppi-theme";
 ```
 
 Then:
@@ -242,10 +228,10 @@ Koppi is what I want to feel when I'm working in a WM environment.
 ## Roadmap
 
 * [x] Add screenshots.
-* [ ] Stabilize palette names.
-* [ ] Add more terminal ports.
-* [ ] Add Neovim port.
-* [ ] Add VS Code port.
+* [x] Stabilize palette names.
+* [x] Add more terminal ports.
+* [x] Add Neovim port.
+* [x] Add VS Code port.
 * [ ] Add Home Manager modules.
 * [ ] Consider GTK/libadwaita support later.
 
