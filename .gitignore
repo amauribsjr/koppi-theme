@@ -6,5 +6,4 @@ result-*
 .envrc
 *.tmp
 *.bak
-docs
 scripts
