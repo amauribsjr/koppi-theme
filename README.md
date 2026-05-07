@@ -10,7 +10,7 @@ It started as the visual layer of my personal NixOS setup and is being split int
 
 Screenshots are in `screenshots/`.
 
-![Koppi desktop preview](screenshots/desktop.png)
+![Koppi Helix preview](screenshots/helix.png)
 
 ## Palette
 
