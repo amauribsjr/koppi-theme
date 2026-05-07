@@ -6,7 +6,7 @@
 
 window {
   background-color: #2e2e2e;
-  background-image: url("/home/koppi/Pictures/Wallpapers/wallpaper.png");
+  /* Optional: set your own wallpaper path. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
