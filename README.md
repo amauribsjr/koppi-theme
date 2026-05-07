@@ -6,10 +6,14 @@ It started as the visual layer of my personal NixOS setup and is being split int
 
 Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gustabayer) and Rust.
 
-## Summary
+---
+
+**Summary**
 
 [Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix usage](#nix-usage) · [Portable usage](#portable-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
+
 ---
+
 **Editors:** [Helix](#helix) · [Zed](#zed) · [Neovim](#neovim) · [VS Code](#vs-code)  
 **Terminals:** [Kitty](#kitty) · [Alacritty](#alacritty) · [Foot](#foot) · [WezTerm](#wezterm) · [Ghostty](#ghostty)  
 **Desktop:** [Waybar](#waybar) · [Wofi](#wofi) · [gtklock](#gtklock) · [ReGreet](#regreet)  
