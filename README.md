@@ -4,7 +4,7 @@
 
 It started as the visual layer of my personal NixOS setup and is being split into a standalone, reproducible theme project.
 
-Two key influences shaped Koppi: Bayer (my friend) and Rust.
+Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gustabayer) and Rust.
 
 ## Preview
 
