@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.1
+
+Fixed:
+
+Restored the complete Neovim colorscheme port.
+Restored the complete VS Code theme port.
+Fixed invalid/truncated editor theme files from 0.3.0.
+
+Changed:
+
+Normalized Waybar CSS port formatting without changing the palette.
+
 ## 0.3.0
 
 Added:
