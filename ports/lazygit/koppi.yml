@@ -1,0 +1,32 @@
+# Koppi theme for lazygit
+#
+# Option 1 — load alongside your main config via LG_CONFIG_FILE:
+#
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/koppi.yml"
+#
+# Option 2 — copy the gui.theme block into your existing lazygit config.yml.
+
+gui:
+  theme:
+    activeBorderColor:
+      - '#d4b048'
+      - bold
+    inactiveBorderColor:
+      - '#535353'
+    optionsTextColor:
+      - '#909090'
+    selectedLineBgColor:
+      - '#383838'
+    selectedRangeBgColor:
+      - '#434343'
+    cherryPickedCommitBgColor:
+      - '#434343'
+    cherryPickedCommitFgColor:
+      - '#d4b048'
+    unstagedChangesColor:
+      - '#b54a4a'
+    defaultFgColor:
+      - '#e8e8e8'
+    searchingActiveBorderColor:
+      - '#e8c858'
+      - bold

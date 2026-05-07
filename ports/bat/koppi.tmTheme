@@ -1,0 +1,176 @@
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Koppi</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2e2e2e</string>
+				<key>caret</key>
+				<string>#e8e8e8</string>
+				<key>foreground</key>
+				<string>#e8e8e8</string>
+				<key>invisibles</key>
+				<string>#535353</string>
+				<key>lineHighlight</key>
+				<string>#383838</string>
+				<key>selection</key>
+				<string>#4e4e4e</string>
+				<key>selectionForeground</key>
+				<string>#e8e8e8</string>
+				<key>findHighlight</key>
+				<string>#d4b048</string>
+				<key>findHighlightForeground</key>
+				<string>#2e2e2e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Comment</string>
+			<key>scope</key><string>comment, punctuation.definition.comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key><string>#787878</string>
+				<key>fontStyle</key><string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key><string>String</string>
+			<key>scope</key><string>string, string.quoted, string.template</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#6aa07a</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Number</string>
+			<key>scope</key><string>constant.numeric</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#e8c858</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Constant</string>
+			<key>scope</key><string>constant, constant.language, constant.character</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#f0d060</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Keyword</string>
+			<key>scope</key><string>keyword, keyword.control, storage, storage.type, storage.modifier</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#d4b048</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Operator</string>
+			<key>scope</key><string>keyword.operator</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#909090</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Function</string>
+			<key>scope</key><string>entity.name.function, meta.function-call, support.function</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#e8e8e8</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Type</string>
+			<key>scope</key><string>entity.name.type, entity.name.class, support.type, support.class</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#a8a8a8</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Variable</string>
+			<key>scope</key><string>variable, variable.other</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#e8e8e8</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Punctuation</string>
+			<key>scope</key><string>punctuation, meta.brace, meta.bracket</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#909090</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Tag</string>
+			<key>scope</key><string>entity.name.tag</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#d4b048</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Attribute</string>
+			<key>scope</key><string>entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#e8c858</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Invalid</string>
+			<key>scope</key><string>invalid, invalid.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key><string>#c45a5a</string>
+				<key>background</key><string>#383838</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Diff Added</string>
+			<key>scope</key><string>markup.inserted</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#6aa07a</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Diff Deleted</string>
+			<key>scope</key><string>markup.deleted</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#c45a5a</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Diff Changed</string>
+			<key>scope</key><string>markup.changed</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#c4924a</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Markup Heading</string>
+			<key>scope</key><string>markup.heading, entity.name.section</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key><string>#d4b048</string>
+				<key>fontStyle</key><string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Markup Bold</string>
+			<key>scope</key><string>markup.bold</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key><string>#e8c858</string>
+				<key>fontStyle</key><string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Markup Italic</string>
+			<key>scope</key><string>markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key><string>#e8e8e8</string>
+				<key>fontStyle</key><string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Markup Link</string>
+			<key>scope</key><string>markup.underline.link, string.other.link</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#909090</string></dict>
+		</dict>
+		<dict>
+			<key>name</key><string>Markup Inline Code</string>
+			<key>scope</key><string>markup.raw.inline, markup.raw.block</string>
+			<key>settings</key>
+			<dict><key>foreground</key><string>#a8a8a8</string></dict>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>b1e2c3d4-koppi-bat-theme-0001</string>
+</dict>
+</plist>

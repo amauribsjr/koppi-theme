@@ -20,6 +20,12 @@ required_files=(
   "palette/koppi.css"
   "palette/koppi.scss"
 
+  "ports/bat/koppi.tmTheme"
+  "ports/btop/koppi.theme"
+  "ports/delta/koppi.gitconfig"
+  "ports/fzf/koppi.sh"
+  "ports/lazygit/koppi.yml"
+
   "ports/alacritty/koppi.toml"
   "ports/foot/koppi.ini"
   "ports/ghostty/koppi"
@@ -89,7 +95,6 @@ validate_toml() {
 
 validate_lua() {
   local file="$1"
-
   if command -v lua >/dev/null 2>&1; then
     lua -e "assert(loadfile('${file}'))" >/dev/null \
       || fail "Invalid Lua syntax: $file"
@@ -147,13 +152,10 @@ grep -RhoE '#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?' ports palette/koppi.json palette/k
 bad_colors=0
 while IFS= read -r color; do
   [[ -n "$color" ]] || continue
-
   base="${color:0:6}"
-
   if grep -Fxq "$color" "$palette_colors" || grep -Fxq "$base" "$palette_colors"; then
     continue
   fi
-
   echo "Unexpected color outside Koppi palette: #${color}" >&2
   bad_colors=1
 done < "$used_colors"

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.8.0
+
+Added:
+
+- `ports/bat/koppi.tmTheme` — TextMate syntax theme for bat.
+- `ports/btop/koppi.theme` — color theme for btop++.
+- `ports/delta/koppi.gitconfig` — gitconfig snippet for delta git diff pager.
+- `ports/fzf/koppi.sh` — shell environment variables for fzf.
+- `ports/lazygit/koppi.yml` — GUI theme for lazygit.
+- Installation instructions for all five new ports in README.
+- All five new port files added to repository validation in `scripts/check.sh`.
+
 ## 0.7.0
 
 Added:

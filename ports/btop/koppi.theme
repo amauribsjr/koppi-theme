@@ -1,0 +1,68 @@
+# Koppi theme for btop++
+#
+# Place this file in ~/.config/btop/themes/
+# Then select "koppi" in btop settings under "Color theme".
+
+# Main
+theme_background = True
+main_bg = 2e2e2e
+main_fg = e8e8e8
+title = d4b048
+hi_fg = e8c858
+selected_bg = 4e4e4e
+selected_fg = e8e8e8
+inactive_fg = 606060
+graph_text = 909090
+meter_bg = 383838
+proc_misc = 909090
+
+# Box borders and dividers
+cpu_box = 535353
+mem_box = 535353
+net_box = 535353
+proc_box = 535353
+div_line = 434343
+
+# Temperature gradient (cool → hot)
+temp_start = 6aa07a
+temp_end   = c45a5a
+
+# CPU usage gradient
+cpu_start = 5a8f6a
+cpu_mid   = d4b048
+cpu_end   = c45a5a
+
+# Memory: free
+free_start = 5a8f6a
+free_mid   = 5a8f6a
+free_end   = 6aa07a
+
+# Memory: cached
+cached_start = 8a7020
+cached_mid   = 8a7020
+cached_end   = d4b048
+
+# Memory: available
+available_start = 5a8f6a
+available_mid   = 6aa07a
+available_end   = 6aa07a
+
+# Memory: used
+used_start = d4b048
+used_mid   = c4924a
+used_end   = c45a5a
+
+# Network: download
+download_start = 5a8f6a
+download_mid   = 6aa07a
+download_end   = 6aa07a
+
+# Network: upload
+upload_start = 8a7020
+upload_mid   = d4b048
+upload_end   = e8c858
+
+# Process usage
+process_start = 5a8f6a
+process_mid   = d4b048
+process_end   = c45a5a

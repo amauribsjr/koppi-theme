@@ -9,6 +9,11 @@ Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gu
 ## Summary
 
 [Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix usage](#nix-usage) · [Portable usage](#portable-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
+---
+**Editors:** [Helix](#helix) · [Zed](#zed) · [Neovim](#neovim) · [VS Code](#vs-code)  
+**Terminals:** [Kitty](#kitty) · [Alacritty](#alacritty) · [Foot](#foot) · [WezTerm](#wezterm) · [Ghostty](#ghostty)  
+**Desktop:** [Waybar](#waybar) · [Wofi](#wofi) · [gtklock](#gtklock) · [ReGreet](#regreet)  
+**CLI/TUI:** [bat](#bat) · [btop](#btop) · [delta](#delta) · [fzf](#fzf) · [lazygit](#lazygit)
 
 ## Preview
 
@@ -65,6 +70,11 @@ The canonical palette is available in:
 | Wofi      | Available | `ports/wofi/koppi.css`                       |
 | gtklock   | Available | `ports/gtklock/koppi.css`                    |
 | ReGreet   | Initial   | `ports/regreet/koppi.css`                    |
+| bat       | Available | `ports/bat/koppi.tmTheme`                    |
+| btop      | Available | `ports/btop/koppi.theme`                     |
+| delta     | Available | `ports/delta/koppi.gitconfig`                |
+| fzf       | Available | `ports/fzf/koppi.sh`                         |
+| lazygit   | Available | `ports/lazygit/koppi.yml`                    |
 
 ## Installation
 
@@ -192,6 +202,64 @@ cp ports/wofi/koppi.css ~/.config/wofi/style.css
 mkdir -p ~/.config/gtklock
 cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
 ```
+
+### bat
+
+```bash
+mkdir -p "$(bat --config-dir)/themes"
+cp ports/bat/koppi.tmTheme "$(bat --config-dir)/themes/Koppi.tmTheme"
+bat cache --build
+```
+
+Then set the theme in `~/.config/bat/config`:
+
+```
+--theme=Koppi
+```
+
+### btop
+
+```bash
+mkdir -p ~/.config/btop/themes
+cp ports/btop/koppi.theme ~/.config/btop/themes/koppi.theme
+```
+
+Then select `koppi` under color theme in btop settings (`T` to open).
+
+### delta
+
+Include the theme from your `~/.gitconfig`:
+
+```ini
+[include]
+    path = /path/to/ports/delta/koppi.gitconfig
+
+[delta]
+    features = koppi
+```
+
+If you use the Koppi bat theme, set `syntax-theme = Koppi` inside the
+`[delta "koppi"]` block for consistent syntax highlighting across both tools.
+
+### fzf
+
+Source the file from your shell configuration:
+
+```bash
+# bash / zsh
+source /path/to/ports/fzf/koppi.sh
+```
+
+### lazygit
+
+**Option 1** — load alongside your main config:
+
+```bash
+export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/koppi.yml"
+cp ports/lazygit/koppi.yml ~/.config/lazygit/koppi.yml
+```
+
+**Option 2** — copy the `gui.theme` block into your existing `~/.config/lazygit/config.yml`.
 
 ## Nix usage
 
