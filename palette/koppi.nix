@@ -41,11 +41,5 @@ rec {
   bwhite   = "f5f5f5";
 
   warning  = "c4924a";
-
-  redsoft  = accdim;
-  orange   = accent;
-  teal     = fgMuted;
-  slate    = bg1;
-
   transparent = "00000000";
 }
