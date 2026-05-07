@@ -208,27 +208,27 @@ colors = inputs.koppi-theme.lib.colors;
 ```
 
 ## Portable usage
- 
+
 For projects that do not use Nix, the palette is also available as CSS custom properties
 and SCSS variables under `palette/`.
- 
+
 **CSS:**
- 
+
 ```css
 @import "palette/koppi.css";
- 
+
 .my-element {
   background-color: var(--koppi-bg);
   color: var(--koppi-fg);
   border-color: var(--koppi-accent);
 }
 ```
- 
+
 **SCSS:**
- 
+
 ```scss
 @use "palette/koppi" as koppi;
- 
+
 .my-element {
   background-color: koppi.$koppi-bg;
   color: koppi.$koppi-fg;

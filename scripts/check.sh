@@ -139,7 +139,7 @@ if [[ ! -s "$palette_colors" ]]; then
   fail "Could not extract colors from palette/koppi.nix"
 fi
 
-grep -RhoE '#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?' ports palette/koppi.json 2>/dev/null \
+grep -RhoE '#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?' ports palette/koppi.json palette/koppi.css palette/koppi.scss 2>/dev/null \
   | tr -d '#' \
   | tr '[:upper:]' '[:lower:]' \
   | sort -u > "$used_colors"
