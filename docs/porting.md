@@ -1,12 +1,17 @@
 # Porting Koppi
 
-Avoid this in public ports:
+Avoid hardcoding a single font without fallbacks in public ports:
 
 ```css
+/* Avoid this */
 font-family: "JetBrainsMono Nerd Font";
+
+/* Prefer this */
+font-family: "JetBrainsMono Nerd Font", "Noto Sans Mono", monospace;
 ```
 
-The first form keeps Koppi's intended look while still working on systems without the preferred font.
+The second form keeps Koppi's intended look on systems that have the preferred font installed,
+while still rendering correctly on systems that do not.
 
 ## Wallpaper guidance
 

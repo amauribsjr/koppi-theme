@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1
+
+Fixed:
+
+Restored the complete Waybar CSS port.
+Fixed missing @define-color declarations in ports/waybar/koppi.css.
+Prevented undefined GTK CSS color references in the Waybar port.
+
 ## 0.5.0
 
 Added:
