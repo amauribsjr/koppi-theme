@@ -1,12 +1,23 @@
 # Changelog
 
+## 0.1.2
+
+Fixed:
+
+- Removed user-specific wallpaper path from the gtklock port.
+
 ## 0.1.1
 
 Added:
 
 - Kitty port.
 - Wofi port.
-- README cleanup for available ports and screenshots.
+
+Changed:
+
+- Updated README to reflect current port status.
+- Added available screenshots to the preview section.
+- Linked Bayer's GitHub profile.
 
 ## 0.1.0
 
