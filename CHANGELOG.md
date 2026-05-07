@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.5.0
+
+Added:
+
+- Stronger repository validation script.
+- GitHub Actions workflow for automated checks.
+- Required-file validation for palette, ports, docs and GitHub templates.
+- JSON validation using Nix builtins.
+- TOML validation using Nix builtins.
+- Lua syntax validation for Lua-based ports.
+- User-specific path detection in public theme files.
+- Color consistency check against the canonical Koppi palette.
+
+Changed:
+
+- Improved release safety by checking for missing, empty, invalid or inconsistent port files before publishing.
+
 ## 0.4.0
 
 Added:
