@@ -1,0 +1,25 @@
+# Koppi Theme for Ghostty
+
+background = #2e2e2e
+foreground = #e8e8e8
+cursor-color = #e8e8e8
+cursor-text = #2e2e2e
+selection-background = #4e4e4e
+selection-foreground = #e8e8e8
+
+palette = 0=#2e2e2e
+palette = 1=#b54a4a
+palette = 2=#5a8f6a
+palette = 3=#d4b048
+palette = 4=#646464
+palette = 5=#535353
+palette = 6=#909090
+palette = 7=#e8e8e8
+palette = 8=#535353
+palette = 9=#c45a5a
+palette = 10=#6aa07a
+palette = 11=#e8c858
+palette = 12=#909090
+palette = 13=#787878
+palette = 14=#a8a8a8
+palette = 15=#f5f5f5

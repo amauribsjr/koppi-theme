@@ -44,15 +44,19 @@ The canonical palette is available in:
 
 ## Ports
 
-| App     | Status    | File                      |
-| ------- | --------- | ------------------------- |
-| Helix   | Available | `ports/helix/koppi.toml`  |
-| Zed     | Available | `ports/zed/koppi.json`    |
-| Kitty   | Available | `ports/kitty/koppi.conf`  |
-| Waybar  | Available | `ports/waybar/koppi.css`  |
-| Wofi    | Available | `ports/wofi/koppi.css`    |
-| gtklock | Available | `ports/gtklock/koppi.css` |
-| ReGreet | Initial   | `ports/regreet/koppi.css` |
+| App       | Status    | File                         |
+| --------- | --------- | ---------------------------- |
+| Helix     | Available | `ports/helix/koppi.toml`     |
+| Zed       | Available | `ports/zed/koppi.json`       |
+| Kitty     | Available | `ports/kitty/koppi.conf`     |
+| Alacritty | Available | `ports/alacritty/koppi.toml` |
+| Foot      | Available | `ports/foot/koppi.ini`       |
+| WezTerm   | Available | `ports/wezterm/koppi.lua`    |
+| Ghostty   | Available | `ports/ghostty/koppi`        |
+| Waybar    | Available | `ports/waybar/koppi.css`     |
+| Wofi      | Available | `ports/wofi/koppi.css`       |
+| gtklock   | Available | `ports/gtklock/koppi.css`    |
+| ReGreet   | Initial   | `ports/regreet/koppi.css`    |
 
 ## Installation
 
@@ -89,6 +93,66 @@ Then include it in `kitty.conf`:
 
 ```conf
 include koppi.conf
+```
+
+### Alacritty
+
+```bash
+mkdir -p ~/.config/alacritty/themes
+cp ports/alacritty/koppi.toml ~/.config/alacritty/themes/koppi.toml
+```
+
+Then import it from `alacritty.toml`:
+
+```toml
+import = ["~/.config/alacritty/themes/koppi.toml"]
+```
+
+### Foot
+
+Append the contents of `ports/foot/koppi.ini` to your Foot config, or include it according to your setup.
+
+```bash
+cat ports/foot/koppi.ini >> ~/.config/foot/foot.ini
+```
+
+### WezTerm
+
+Copy the theme file:
+
+```bash
+mkdir -p ~/.config/wezterm/themes
+cp ports/wezterm/koppi.lua ~/.config/wezterm/themes/koppi.lua
+```
+
+Then load it from your WezTerm config.
+
+### Ghostty
+
+```bash
+mkdir -p ~/.config/ghostty/themes
+cp ports/ghostty/koppi ~/.config/ghostty/themes/koppi
+```
+
+### Waybar
+
+```bash
+mkdir -p ~/.config/waybar
+cp ports/waybar/koppi.css ~/.config/waybar/style.css
+```
+
+### Wofi
+
+```bash
+mkdir -p ~/.config/wofi
+cp ports/wofi/koppi.css ~/.config/wofi/style.css
+```
+
+### gtklock
+
+```bash
+mkdir -p ~/.config/gtklock
+cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
 ```
 
 ### Waybar

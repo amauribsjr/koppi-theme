@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.0
+
+Added:
+
+- Alacritty terminal port.
+- Foot terminal port.
+- WezTerm terminal port.
+- Ghostty terminal port.
+
+Changed:
+
+- Updated README with terminal port installation instructions.
+- Extended repository validation for new terminal ports.
+
 ## 0.1.3
 
 Added:
