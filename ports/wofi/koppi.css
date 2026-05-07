@@ -3,7 +3,7 @@
 window {
   background-color: #383838;
   color: #e8e8e8;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font", monospace;
   font-size: 14px;
   border: 1px solid #d4b048;
 }

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.3
+
+Added:
+
+- Palette documentation.
+- Porting guidelines.
+- Contribution guidelines.
+- Basic repository validation script.
+- GitHub Actions workflow for repository checks.
+
+Changed:
+
+- Improved public-port portability with font fallbacks.
+
 ## 0.1.2
 
 Fixed:
