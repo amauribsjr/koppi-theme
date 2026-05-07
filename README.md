@@ -10,9 +10,7 @@ It started as the visual layer of my personal NixOS setup and is being split int
 
 Screenshots are in `screenshots/`.
 
-```md
 ![Koppi desktop preview](screenshots/desktop.png)
-```
 
 ## Palette
 
@@ -50,9 +48,9 @@ The canonical palette is available in:
 | ------- | --------- | ------------------------- |
 | Helix   | Available | `ports/helix/koppi.toml`  |
 | Zed     | Available | `ports/zed/koppi.json`    |
-| Kitty   | Porting   | `ports/kitty/koppi.conf`  |
+| Kitty   | Available | `ports/kitty/koppi.conf`  |
 | Waybar  | Available | `ports/waybar/koppi.css`  |
-| Wofi    | Porting   | `ports/wofi/koppi.css`    |
+| Wofi    | Available | `ports/wofi/koppi.css`    |
 | gtklock | Available | `ports/gtklock/koppi.css` |
 | ReGreet | Initial   | `ports/regreet/koppi.css` |
 

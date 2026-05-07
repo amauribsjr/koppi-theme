@@ -1,0 +1,64 @@
+/* Koppi Theme for Wofi */
+
+window {
+  background-color: #383838;
+  color: #e8e8e8;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  border: 1px solid #d4b048;
+}
+
+#outer-box {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+#inner-box {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+#scroll {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#input {
+  background-color: #2e2e2e;
+  color: #e8e8e8;
+  border: none;
+  border-bottom: 1px solid #d4b048;
+  border-radius: 0;
+  padding: 12px 20px;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#input:focus {
+  color: #f5f5f5;
+  border-bottom: 1px solid #e8c858;
+}
+
+#entry {
+  padding: 10px 20px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: #434343;
+}
+
+#text {
+  color: #787878;
+  font-size: 14px;
+}
+
+#entry:selected #text {
+  color: #e8e8e8;
+}
