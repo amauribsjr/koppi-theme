@@ -1,4 +1,11 @@
 # Koppi Palette
+
+## Background colors
+
+| Name       | Hex       | Intended usage                       |
+|------------|-----------|--------------------------------------|
+| `bg`       | `#2e2e2e` | Main background                      |
+| `bg1`      | `#383838` | Elevated surfaces, sidebars          |
 | `bg2`      | `#434343` | Hover states, soft selections        |
 | `bg3`      | `#535353` | Borders, separators                  |
 | `bg4`      | `#646464` | Disabled UI, low-priority elements   |
@@ -60,6 +67,12 @@
 | `bmagenta` | `#787878` |
 | `bcyan`    | `#a8a8a8` |
 | `bwhite`   | `#f5f5f5` |
+
+> **Design note.** Koppi maps `blue`, `magenta`, `cyan` and their bright variants to neutral
+> grays rather than saturated hues. This is intentional: the palette prioritizes warmth and
+> low contrast over color diversity. Applications that rely on ANSI blue or magenta for
+> semantic distinction may look flatter than expected. This is a known trade-off, not an
+> oversight.
 
 ## Porting principle
 

@@ -191,13 +191,6 @@ mkdir -p ~/.config/gtklock
 cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
 ```
 
-### gtklock
-
-```bash
-mkdir -p ~/.config/gtklock
-cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
-```
-
 ## Nix usage
 
 This repository exposes the Koppi palette as a flake output:
