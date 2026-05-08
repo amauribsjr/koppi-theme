@@ -10,7 +10,7 @@ Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gu
 
 **Summary**
 
-[Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix usage](#nix-usage) · [Portable usage](#portable-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
+[Preview](#preview) · [Palette](#palette) · [Ports](#ports) · [Installation](#installation) · [Nix](#nix) · [Portable usage](#portable-usage) · [Philosophy](#philosophy) · [Roadmap](#roadmap)
 
 ---
 
@@ -333,7 +333,7 @@ Then source it from `~/.config/tmux/tmux.conf` or `~/.tmux.conf`:
 source-file ~/.config/tmux/koppi.conf
 ```
 
-## Nix usage
+## Nix
 
 This repository exposes the Koppi palette and a Home Manager module as flake outputs.
 
