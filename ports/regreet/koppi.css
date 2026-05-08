@@ -1,37 +1,227 @@
-@define-color accent_color #d4b048;
-@define-color accent_bg_color #d4b048;
-@define-color accent_fg_color #2e2e2e;
+/* Koppi theme for ReGreet
+ *
+ * Place this file at the path configured in regreet.toml:
+ *
+ *   [background]
+ *   path = "/path/to/wallpaper.png"
+ *
+ *   [GTK]
+ *   application_prefer_dark_theme = true
+ *   icon_theme_name = "..."
+ *   cursor_theme_name = "..."
+ *   font_name = "..."
+ *
+ * Then set the CSS path:
+ *   css_path = "/etc/greetd/koppi.css"
+ *
+ * Or via NixOS:
+ *   programs.regreet.settings.GTK.css_path = ./.../koppi.css;
+ */
 
-@define-color window_bg_color #2e2e2e;
-@define-color window_fg_color #e8e8e8;
+/* ── GTK named colors ───────────────────────────────────────────── */
+@define-color accent_color        #d4b048;
+@define-color accent_bg_color     #d4b048;
+@define-color accent_fg_color     #2e2e2e;
 
-@define-color view_bg_color #2e2e2e;
-@define-color view_fg_color #e8e8e8;
+@define-color window_bg_color     #2e2e2e;
+@define-color window_fg_color     #e8e8e8;
 
-@define-color card_bg_color #383838;
-@define-color card_fg_color #e8e8e8;
+@define-color view_bg_color       #2e2e2e;
+@define-color view_fg_color       #e8e8e8;
 
+@define-color card_bg_color       #383838;
+@define-color card_fg_color       #e8e8e8;
+
+@define-color headerbar_bg_color  #383838;
+@define-color headerbar_fg_color  #e8e8e8;
+
+@define-color popover_bg_color    #434343;
+@define-color popover_fg_color    #e8e8e8;
+
+@define-color sidebar_bg_color    #383838;
+@define-color sidebar_fg_color    #e8e8e8;
+
+@define-color error_color         #b54a4a;
+@define-color warning_color       #c4924a;
+@define-color success_color       #5a8f6a;
+
+/* ── Reset ──────────────────────────────────────────────────────── */
 * {
   text-shadow: none;
   box-shadow: none;
+  outline: none;
 }
 
+/* ── Window ─────────────────────────────────────────────────────── */
 window {
   background-color: #2e2e2e;
   color: #e8e8e8;
 }
 
+/* ── Login box ──────────────────────────────────────────────────── */
 box#login-box {
   background-color: #383838;
-  border: 2px solid #d4b048;
+  border: 1px solid #535353;
+  border-radius: 6px;
+  padding: 40px 52px;
+  min-width: 400px;
+}
+
+/* ── Labels ─────────────────────────────────────────────────────── */
+label {
+  color: #e8e8e8;
+}
+
+label.title,
+label.heading {
+  color: #d4b048;
+  font-weight: 700;
+}
+
+label.dim-label,
+label.subtitle {
+  color: #909090;
+}
+
+label.error {
+  color: #c45a5a;
+}
+
+label.warning {
+  color: #c4924a;
+}
+
+/* ── Entry widgets ──────────────────────────────────────────────── */
+entry {
+  background-color: #2e2e2e;
+  color: #e8e8e8;
+  border: 1px solid #535353;
   border-radius: 4px;
-  padding: 36px 48px;
-  min-width: 420px;
+  padding: 8px 12px;
+  caret-color: #d4b048;
+}
+
+entry:focus {
+  border-color: #d4b048;
+  background-color: #353535;
+}
+
+entry:disabled {
+  background-color: #383838;
+  color: #606060;
+  border-color: #434343;
+}
+
+entry placeholder {
+  color: #606060;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────── */
+button {
+  background-color: #434343;
+  color: #e8e8e8;
+  border: 1px solid #535353;
+  border-radius: 4px;
+  padding: 6px 16px;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+button:hover {
+  background-color: #4e4e4e;
+  border-color: #646464;
+}
+
+button:active {
+  background-color: #535353;
+}
+
+button:disabled {
+  background-color: #383838;
+  color: #606060;
+  border-color: #434343;
 }
 
 button.suggested-action {
   background-color: #d4b048;
   color: #2e2e2e;
-  border: 1px solid #d4b048;
-  font-weight: 800;
+  border-color: #d4b048;
+  font-weight: 700;
+}
+
+button.suggested-action:hover {
+  background-color: #e8c858;
+  border-color: #e8c858;
+}
+
+button.suggested-action:active {
+  background-color: #8a7020;
+  border-color: #8a7020;
+}
+
+button.destructive-action {
+  background-color: #b54a4a;
+  color: #e8e8e8;
+  border-color: #b54a4a;
+}
+
+button.destructive-action:hover {
+  background-color: #c45a5a;
+  border-color: #c45a5a;
+}
+
+/* ── Combo / dropdowns ──────────────────────────────────────────── */
+combobox,
+comboboxtext {
+  background-color: #2e2e2e;
+  color: #e8e8e8;
+  border: 1px solid #535353;
+  border-radius: 4px;
+}
+
+combobox:focus,
+comboboxtext:focus {
+  border-color: #d4b048;
+}
+
+/* ── Popover (session selector dropdown) ────────────────────────── */
+popover {
+  background-color: #434343;
+  border: 1px solid #535353;
+  border-radius: 4px;
+}
+
+popover row {
+  color: #e8e8e8;
+  padding: 6px 12px;
+}
+
+popover row:hover {
+  background-color: #4e4e4e;
+}
+
+popover row:selected {
+  background-color: #d4b048;
+  color: #2e2e2e;
+}
+
+/* ── Scrollbars ─────────────────────────────────────────────────── */
+scrollbar {
+  background-color: #383838;
+}
+
+scrollbar slider {
+  background-color: #535353;
+  border-radius: 4px;
+  min-width: 6px;
+  min-height: 6px;
+}
+
+scrollbar slider:hover {
+  background-color: #646464;
+}
+
+/* ── Selection ──────────────────────────────────────────────────── */
+selection {
+  background-color: #d4b048;
+  color: #2e2e2e;
 }

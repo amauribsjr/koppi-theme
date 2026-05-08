@@ -75,7 +75,7 @@ The canonical palette is available in:
 | Waybar    | Available | `ports/waybar/koppi.css`                     |
 | Wofi      | Available | `ports/wofi/koppi.css`                       |
 | gtklock   | Available | `ports/gtklock/koppi.css`                    |
-| ReGreet   | Initial   | `ports/regreet/koppi.css`                    |
+| ReGreet   | Available | `ports/regreet/koppi.css`                    |
 | bat       | Available | `ports/bat/koppi.tmTheme`                    |
 | btop      | Available | `ports/btop/koppi.theme`                     |
 | delta     | Available | `ports/delta/koppi.gitconfig`                |

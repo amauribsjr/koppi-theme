@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.1
+
+Fixed:
+
+- Completed `ports/regreet/koppi.css` — was marked Initial due to missing entry
+  widgets, labels, hover/focus states, error styling, session selector and scrollbars.
+  Now marked Available.
+
 ## 0.8.0
 
 Added:
