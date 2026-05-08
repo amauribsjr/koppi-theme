@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.10.0
+
+Added:
+
+- `homeManagerModules.default` flake output — the module is now consumable
+  directly as a Home Manager module via the flake.
+- `koppi.enable` option to activate the module.
+- `koppi.colors` read-only option exposing the full palette to other modules.
+- `koppi.alacritty.enable` — configures Alacritty colors via `programs.alacritty`.
+- `koppi.kitty.enable` — configures Kitty colors via `programs.kitty`.
+- `koppi.bat.enable` — registers the Koppi tmTheme and sets it as the active
+  bat theme via `programs.bat`.
+- `koppi.fzf.enable` — sets fzf color options via `programs.fzf.defaultOptions`.
+- `koppi.waybar.enable` — applies the Koppi Waybar stylesheet via
+  `programs.waybar.style`.
+
+Fixed:
+
+- Added missing `### ReGreet` installation section to README.
+- Added `ports/starship/koppi.toml` and `ports/yazi/koppi.toml` to TOML
+  syntax validation in `scripts/check.sh`.
+- Added `docs/screenshots.md` to `required_files` in `scripts/check.sh`.
+- Updated `docs/releases.md` to reflect that Home Manager modules are
+  included in 0.10.x, not deferred.
+- Updated README roadmap.
+
 ## 0.9.0
 
 Added:

@@ -212,6 +212,28 @@ mkdir -p ~/.config/gtklock
 cp ports/gtklock/koppi.css ~/.config/gtklock/style.css
 ```
 
+### ReGreet
+
+Copy the CSS file to your greetd configuration directory:
+
+```bash
+sudo cp ports/regreet/koppi.css /etc/greetd/koppi.css
+```
+
+Then set the CSS path in your ReGreet configuration. With NixOS:
+
+```nix
+programs.regreet.settings.GTK.css_path = "/etc/greetd/koppi.css";
+```
+
+Or in `regreet.toml`:
+
+```toml
+[GTK]
+css_path = "/etc/greetd/koppi.css"
+application_prefer_dark_theme = true
+```
+
 ### bat
 
 ```bash
@@ -313,7 +335,9 @@ source-file ~/.config/tmux/koppi.conf
 
 ## Nix usage
 
-This repository exposes the Koppi palette as a flake output:
+This repository exposes the Koppi palette and a Home Manager module as flake outputs.
+
+### Palette only
 
 ```nix
 inputs.koppi-theme.url = "github:amauribsjr/koppi-theme";
@@ -325,10 +349,50 @@ Then:
 colors = inputs.koppi-theme.lib.colors;
 ```
 
+### Home Manager module
+
+Add Koppi as a flake input and import the module:
+
+```nix
+inputs = {
+  koppi-theme.url = "github:amauribsjr/koppi-theme";
+};
+```
+
+In your Home Manager configuration:
+
+```nix
+{ inputs, ... }: {
+  imports = [ inputs.koppi-theme.homeManagerModules.default ];
+
+  koppi.enable = true;
+
+  # Enable per-app modules as needed:
+  koppi.alacritty.enable = true;
+  koppi.kitty.enable     = true;
+  koppi.bat.enable       = true;
+  koppi.fzf.enable       = true;
+  koppi.waybar.enable    = true;
+}
+```
+
+Each sub-option is independent — enable only the apps you manage via Home Manager.
+The `koppi.colors` attribute set is always available when `koppi.enable = true`,
+giving other modules access to the full palette without the leading `#`:
+
+```nix
+{ config, ... }: {
+  koppi.enable = true;
+
+  # Access any token:
+  # config.koppi.colors.accent  →  "d4b048"
+  # config.koppi.colors.bg      →  "2e2e2e"
+}
+```
+
 ## Portable usage
 
-For projects that do not use Nix, the palette is also available as CSS custom properties
-and SCSS variables under `palette/`.
+For projects that do not use Nix, the palette is also available as CSS custom properties, SCSS variables and JSON under `palette/`.
 
 **CSS:**
 
@@ -390,7 +454,10 @@ Koppi is what I want to feel when I'm working in a WM environment.
 * [x] Add more terminal ports.
 * [x] Add Neovim port.
 * [x] Add VS Code port.
-* [ ] Add Home Manager modules.
+* [x] Add CLI/TUI ports.
+* [x] Add portable palette exports.
+* [x] Add GitHub Pages preview.
+* [x] Add Home Manager modules.
 
 ## License
 

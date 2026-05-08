@@ -44,6 +44,7 @@ required_files=(
   "docs/palette.md"
   "docs/porting.md"
   "docs/releases.md"
+  "docs/screenshots.md"
   "CONTRIBUTING.md"
   "README.md"
   "CHANGELOG.md"
@@ -64,6 +65,8 @@ json_files=(
 toml_files=(
   "ports/alacritty/koppi.toml"
   "ports/helix/koppi.toml"
+  "ports/starship/koppi.toml"
+  "ports/yazi/koppi.toml"
 )
 
 lua_files=(

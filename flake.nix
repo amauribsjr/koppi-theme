@@ -5,5 +5,7 @@
     lib = {
       colors = import ./palette/koppi.nix;
     };
+
+    homeManagerModules.default = import ./nix/home-manager.nix;
   };
 }
