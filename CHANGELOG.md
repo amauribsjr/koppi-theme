@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.9.0
+
+Added:
+
+- `ports/yazi/koppi.toml` — file manager color theme for yazi.
+- `ports/starship/koppi.toml` — prompt theme for Starship.
+- `ports/tmux/koppi.conf` — status bar and pane theme for tmux.
+- `docs/screenshots.md` — screenshot standards document defining format,
+  resolution, reference content and naming conventions.
+- Installation instructions for all three new ports in README.
+- All three new port files added to repository validation in `scripts/check.sh`.
+
 ## 0.8.1
 
 Fixed:

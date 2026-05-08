@@ -17,7 +17,7 @@ Koppi was shaped by two main influences: my friend [Bayer](https://github.com/gu
 **Editors:** [Helix](#helix) · [Zed](#zed) · [Neovim](#neovim) · [VS Code](#vs-code)  
 **Terminals:** [Kitty](#kitty) · [Alacritty](#alacritty) · [Foot](#foot) · [WezTerm](#wezterm) · [Ghostty](#ghostty)  
 **Desktop:** [Waybar](#waybar) · [Wofi](#wofi) · [gtklock](#gtklock) · [ReGreet](#regreet)  
-**CLI/TUI:** [bat](#bat) · [btop](#btop) · [delta](#delta) · [fzf](#fzf) · [lazygit](#lazygit)
+**CLI/TUI:** [bat](#bat) · [btop](#btop) · [delta](#delta) · [fzf](#fzf) · [lazygit](#lazygit) · [starship](#starship) · [tmux](#tmux) · [yazi](#yazi)
 
 ## Preview
 
@@ -81,6 +81,9 @@ The canonical palette is available in:
 | delta     | Available | `ports/delta/koppi.gitconfig`                |
 | fzf       | Available | `ports/fzf/koppi.sh`                         |
 | lazygit   | Available | `ports/lazygit/koppi.yml`                    |
+| starship  | Available | `ports/starship/koppi.toml`                  |
+| tmux      | Available | `ports/tmux/koppi.conf`                      |
+| yazi      | Available | `ports/yazi/koppi.toml`                      |
 
 ## Installation
 
@@ -266,6 +269,47 @@ cp ports/lazygit/koppi.yml ~/.config/lazygit/koppi.yml
 ```
 
 **Option 2** — copy the `gui.theme` block into your existing `~/.config/lazygit/config.yml`.
+
+### yazi
+
+```bash
+mkdir -p ~/.config/yazi/themes
+cp ports/yazi/koppi.toml ~/.config/yazi/themes/koppi.toml
+```
+
+Then set in `~/.config/yazi/yazi.toml`:
+
+```toml
+[theme]
+use = "koppi"
+```
+
+### starship
+
+```bash
+cp ports/starship/koppi.toml ~/.config/starship/koppi.toml
+```
+
+Then point Starship to it:
+
+```bash
+# bash / zsh — add to your shell rc
+export STARSHIP_CONFIG="$HOME/.config/starship/koppi.toml"
+```
+
+Or copy the contents into your existing `~/.config/starship.toml`.
+
+### tmux
+
+```bash
+cp ports/tmux/koppi.conf ~/.config/tmux/koppi.conf
+```
+
+Then source it from `~/.config/tmux/tmux.conf` or `~/.tmux.conf`:
+
+```conf
+source-file ~/.config/tmux/koppi.conf
+```
 
 ## Nix usage
 

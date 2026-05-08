@@ -19,13 +19,14 @@ required_files=(
   "palette/koppi.nix"
   "palette/koppi.css"
   "palette/koppi.scss"
-
   "ports/bat/koppi.tmTheme"
   "ports/btop/koppi.theme"
   "ports/delta/koppi.gitconfig"
   "ports/fzf/koppi.sh"
   "ports/lazygit/koppi.yml"
-
+  "ports/starship/koppi.toml"
+  "ports/tmux/koppi.conf"
+  "ports/yazi/koppi.toml"
   "ports/alacritty/koppi.toml"
   "ports/foot/koppi.ini"
   "ports/ghostty/koppi"
@@ -40,7 +41,6 @@ required_files=(
   "ports/wezterm/koppi.lua"
   "ports/wofi/koppi.css"
   "ports/zed/koppi.json"
-
   "docs/palette.md"
   "docs/porting.md"
   "docs/releases.md"
@@ -48,7 +48,6 @@ required_files=(
   "README.md"
   "CHANGELOG.md"
   "LICENSE"
-
   ".github/ISSUE_TEMPLATE/bug_report.md"
   ".github/ISSUE_TEMPLATE/port_request.md"
   ".github/pull_request_template.md"
