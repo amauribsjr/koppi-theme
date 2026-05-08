@@ -65,6 +65,12 @@
 | `bcyan`    | `#a8a8a8` |
 | `bwhite`   | `#f5f5f5` |
 
+## Utility
+
+| Name          | Hex          | Intended usage             |
+|---------------|--------------|----------------------------|
+| `transparent` | `#00000000`  | Fully transparent surfaces |
+
 > **Design note.** Koppi maps `blue`, `magenta`, `cyan` and their bright variants to neutral
 > grays rather than saturated hues. This is intentional: the palette prioritizes warmth and
 > low contrast over color diversity. Applications that rely on ANSI blue or magenta for

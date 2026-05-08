@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.0.0
+
+Koppi reaches its first stable release.
+
+The palette is frozen. All public token names in `palette/koppi.json`,
+`palette/koppi.nix`, `palette/koppi.css` and `palette/koppi.scss` are now
+stable and will not change without a new major version.
+
+The repository structure is frozen. Port file paths and flake outputs
+are part of the public API from this release forward.
+
+Fixed:
+
+- Documented missing `transparent` token in `docs/palette.md`.
+
+Ports (21 total, all Available):
+
+Editors:  Helix · Zed · Neovim · VS Code
+Terminals: Kitty · Alacritty · Foot · WezTerm · Ghostty
+Desktop:  Waybar · Wofi · gtklock · ReGreet
+CLI/TUI:  bat · btop · delta · fzf · lazygit · starship · tmux · yazi
+
 ## 0.10.0
 
 Added:
