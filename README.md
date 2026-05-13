@@ -461,4 +461,4 @@ Koppi is what I want to feel when I'm working in a WM environment.
 
 ## License
 
-[MIT](https://opensource.org/license/mit)
+[MIT](https://github.com/amauribsjr/koppi-theme?tab=MIT-1-ov-file#readme)
