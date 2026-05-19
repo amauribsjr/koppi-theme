@@ -1,19 +1,19 @@
-@define-color bg0     #2e2e2e;
-@define-color bg1     #383838;
-@define-color bg2     #434343;
-@define-color bg3     #535353;
-@define-color bg4     #646464;
-@define-color fg0     #e8e8e8;
-@define-color fg1     #e8e8e8;
-@define-color fg2     #787878;
-@define-color accent  #d4b048;
-@define-color accdim  #8a7020;
-@define-color red     #b54a4a;
-@define-color amber   #e8c858;
-@define-color green   #5a8f6a;
-@define-color purple  #535353;
-@define-color blue    #646464;
-@define-color grey    #646464;
+@define-color bg0 #2e2e2e;
+@define-color bg1 #383838;
+@define-color bg2 #434343;
+@define-color bg3 #535353;
+@define-color bg4 #646464;
+@define-color fg0 #e8e8e8;
+@define-color fg1 #e8e8e8;
+@define-color fg2 #787878;
+@define-color accent #d4b048;
+@define-color accdim #8a7020;
+@define-color red #b54a4a;
+@define-color amber #e8c858;
+@define-color green #5a8f6a;
+@define-color purple #535353;
+@define-color blue #646464;
+@define-color grey #646464;
 
 * {
   border: none;

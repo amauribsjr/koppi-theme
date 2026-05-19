@@ -25,44 +25,44 @@ div_line = 434343
 
 # Temperature gradient (cool → hot)
 temp_start = 6aa07a
-temp_end   = c45a5a
+temp_end = c45a5a
 
 # CPU usage gradient
 cpu_start = 5a8f6a
-cpu_mid   = d4b048
-cpu_end   = c45a5a
+cpu_mid = d4b048
+cpu_end = c45a5a
 
 # Memory: free
 free_start = 5a8f6a
-free_mid   = 5a8f6a
-free_end   = 6aa07a
+free_mid = 5a8f6a
+free_end = 6aa07a
 
 # Memory: cached
 cached_start = 8a7020
-cached_mid   = 8a7020
-cached_end   = d4b048
+cached_mid = 8a7020
+cached_end = d4b048
 
 # Memory: available
 available_start = 5a8f6a
-available_mid   = 6aa07a
-available_end   = 6aa07a
+available_mid = 6aa07a
+available_end = 6aa07a
 
 # Memory: used
 used_start = d4b048
-used_mid   = c4924a
-used_end   = c45a5a
+used_mid = c4924a
+used_end = c45a5a
 
 # Network: download
 download_start = 5a8f6a
-download_mid   = 6aa07a
-download_end   = 6aa07a
+download_mid = 6aa07a
+download_end = 6aa07a
 
 # Network: upload
 upload_start = 8a7020
-upload_mid   = d4b048
-upload_end   = e8c858
+upload_mid = d4b048
+upload_end = e8c858
 
 # Process usage
 process_start = 5a8f6a
-process_mid   = d4b048
-process_end   = c45a5a
+process_mid = d4b048
+process_end = c45a5a

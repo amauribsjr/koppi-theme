@@ -1,7 +1,7 @@
 { config, lib, ... }:
 
 let
-  c   = import ../palette/koppi.nix;
+  c = import ../palette/koppi.nix;
   hex = v: "#${v}";
   cfg = config.koppi;
 in {
@@ -12,16 +12,16 @@ in {
     enable = lib.mkEnableOption "Koppi theme";
 
     colors = lib.mkOption {
-      readOnly    = true;
-      default     = c;
+      readOnly = true;
+      default = c;
       description = "The Koppi color palette. Token values do not include the leading #.";
     };
 
     alacritty.enable = lib.mkEnableOption "Koppi colors for Alacritty";
-    kitty.enable     = lib.mkEnableOption "Koppi colors for Kitty";
-    bat.enable       = lib.mkEnableOption "Koppi syntax theme for bat";
-    fzf.enable       = lib.mkEnableOption "Koppi colors for fzf";
-    waybar.enable    = lib.mkEnableOption "Koppi stylesheet for Waybar";
+    kitty.enable = lib.mkEnableOption "Koppi colors for Kitty";
+    bat.enable = lib.mkEnableOption "Koppi syntax theme for bat";
+    fzf.enable = lib.mkEnableOption "Koppi colors for fzf";
+    waybar.enable = lib.mkEnableOption "Koppi stylesheet for Waybar";
 
   };
 
@@ -30,7 +30,7 @@ in {
 
     # Palette files — always exposed when koppi.enable = true
     {
-      xdg.configFile."koppi/colors.nix".source  = ../palette/koppi.nix;
+      xdg.configFile."koppi/colors.nix".source = ../palette/koppi.nix;
       xdg.configFile."koppi/colors.json".source = ../palette/koppi.json;
     }
 
@@ -42,32 +42,32 @@ in {
           foreground = hex c.fg;
         };
         cursor = {
-          text   = hex c.bg;
+          text = hex c.bg;
           cursor = hex c.accent;
         };
         selection = {
-          text       = hex c.fg;
+          text = hex c.fg;
           background = hex c.bgSelect;
         };
         normal = {
-          black   = hex c.black;
-          red     = hex c.red;
-          green   = hex c.green;
-          yellow  = hex c.yellow;
-          blue    = hex c.blue;
+          black = hex c.black;
+          red = hex c.red;
+          green = hex c.green;
+          yellow = hex c.yellow;
+          blue = hex c.blue;
           magenta = hex c.magenta;
-          cyan    = hex c.cyan;
-          white   = hex c.white;
+          cyan = hex c.cyan;
+          white = hex c.white;
         };
         bright = {
-          black   = hex c.bblack;
-          red     = hex c.bred;
-          green   = hex c.bgreen;
-          yellow  = hex c.byellow;
-          blue    = hex c.bblue;
+          black = hex c.bblack;
+          red = hex c.bred;
+          green = hex c.bgreen;
+          yellow = hex c.byellow;
+          blue = hex c.bblue;
           magenta = hex c.bmagenta;
-          cyan    = hex c.bcyan;
-          white   = hex c.bwhite;
+          cyan = hex c.bcyan;
+          white = hex c.bwhite;
         };
       };
     })
@@ -75,24 +75,24 @@ in {
     # ── Kitty ────────────────────────────────────────────────────────
     (lib.mkIf cfg.kitty.enable {
       programs.kitty.settings = {
-        background           = hex c.bg;
-        foreground           = hex c.fg;
+        background = hex c.bg;
+        foreground = hex c.fg;
         selection_background = hex c.bgSelect;
         selection_foreground = hex c.fg;
-        cursor               = hex c.accent;
-        cursor_text_color    = hex c.bg;
-        url_color            = hex c.accent;
+        cursor = hex c.accent;
+        cursor_text_color = hex c.bg;
+        url_color = hex c.accent;
 
-        color0  = hex c.black;
-        color1  = hex c.red;
-        color2  = hex c.green;
-        color3  = hex c.yellow;
-        color4  = hex c.blue;
-        color5  = hex c.magenta;
-        color6  = hex c.cyan;
-        color7  = hex c.white;
-        color8  = hex c.bblack;
-        color9  = hex c.bred;
+        color0 = hex c.black;
+        color1 = hex c.red;
+        color2 = hex c.green;
+        color3 = hex c.yellow;
+        color4 = hex c.blue;
+        color5 = hex c.magenta;
+        color6 = hex c.cyan;
+        color7 = hex c.white;
+        color8 = hex c.bblack;
+        color9 = hex c.bred;
         color10 = hex c.bgreen;
         color11 = hex c.byellow;
         color12 = hex c.bblue;
@@ -107,7 +107,7 @@ in {
       programs.bat = {
         themes = {
           Koppi = {
-            src  = ../ports/bat;
+            src = ../ports/bat;
             file = "koppi.tmTheme";
           };
         };

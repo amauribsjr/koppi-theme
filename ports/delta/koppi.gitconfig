@@ -14,33 +14,33 @@
 # consistent syntax highlighting across both tools.
 
 [delta "koppi"]
-    syntax-theme                  = Koppi
-    line-numbers                  = true
+    syntax-theme = Koppi
+    line-numbers = true
 
-    minus-style                   = "#b54a4a" "#2e2e2e"
-    minus-emph-style              = "#c45a5a" "#383838"
-    minus-non-emph-style          = normal "#2e2e2e"
+    minus-style = "#b54a4a" "#2e2e2e"
+    minus-emph-style = "#c45a5a" "#383838"
+    minus-non-emph-style = normal "#2e2e2e"
 
-    plus-style                    = "#5a8f6a" "#2e2e2e"
-    plus-emph-style               = "#6aa07a" "#383838"
-    plus-non-emph-style           = normal "#2e2e2e"
+    plus-style = "#5a8f6a" "#2e2e2e"
+    plus-emph-style = "#6aa07a" "#383838"
+    plus-non-emph-style = normal "#2e2e2e"
 
-    zero-style                    = syntax
+    zero-style = syntax
 
-    hunk-header-style             = file line-number syntax
-    hunk-header-decoration-style  = "#535353" box
-    hunk-header-file-style        = "#d4b048"
+    hunk-header-style = file line-number syntax
+    hunk-header-decoration-style = "#535353" box
+    hunk-header-file-style = "#d4b048"
     hunk-header-line-number-style = "#909090"
 
-    file-style                    = "#e8c858" bold
-    file-decoration-style         = "#535353" underline
+    file-style = "#e8c858" bold
+    file-decoration-style = "#535353" underline
 
-    line-numbers-minus-style      = "#b54a4a"
-    line-numbers-plus-style       = "#5a8f6a"
-    line-numbers-zero-style       = "#606060"
-    line-numbers-left-style       = "#535353"
-    line-numbers-right-style      = "#535353"
-    line-numbers-left-format      = "{nm:>4}┤ "
-    line-numbers-right-format     = "{np:>4}┤ "
+    line-numbers-minus-style = "#b54a4a"
+    line-numbers-plus-style = "#5a8f6a"
+    line-numbers-zero-style = "#606060"
+    line-numbers-left-style = "#535353"
+    line-numbers-right-style = "#535353"
+    line-numbers-left-format = "{nm:>4}┤ "
+    line-numbers-right-format = "{np:>4}┤ "
 
-    whitespace-error-style        = "#b54a4a" reverse
+    whitespace-error-style = "#b54a4a" reverse
